@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title> Electric Car LifeCycle </title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+
+    <body id="page-top">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top">Electric-Car Life Cycle</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#registration">Registration</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#car">Cars</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Header -->
+        <header class="masthead">
+            <div class="container">
+                <div class="masthead-subheading">Make a like cycle of your car</div>
+                <a class="btn btn-primary btn-xl text-uppercase" href="#registration">Right Now</a>
+            </div>
+        </header>
+
+        <!-- Services section -->
+        <section id="services">
+            <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                <h2 class="section-heading text-uppercase">Services</h2>
+                <h3 class="section-subheading text-muted">출고 시점부터 중고차가 되는 순까지의 모든 정보를 제공합니다</h3>
+                <br/>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Anyone</h4>
+                    <p class="text-muted">누구나</p>
+                    </div>
+
+                <div class="col-md-4">
+                <span class="fa-stack fa-4x">
+                    <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                    <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                </span>
+                <h4 class="service-heading">Easy</h4>
+                <p class="text-muted">쉽고</p>
+                </div>
+
+
+                <div class="col-md-4">
+                <span class="fa-stack fa-4x">
+                    <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                    <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
+                </span>
+                <h4 class="service-heading">Security</h4>
+                <p class="text-muted">안전하게</p>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- registration section -->
+        <section class="page-section bg-light" id="registration">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">소중한 당신의 차</h2>
+                    <h3 class="section-subheading text-muted">Blockchain 으로 나의 전기차 생애주기 관리하기</h3>
+                </div>
+                <div class="col-lg-12 text-center">
+                    <button class = "btn btn-owner"
+                        type = "button"
+                        data-toggle = "modal"
+                        data-target="#addModal">
+                        전기차 등록
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- car Grid -->
+        <section class="page-section bg-light" id="car">
+            <div class="container">
+                <!-- 구매하기 후 거래이력 보여주기 -->
+                <div id="events"></div>
+                <div class = "row" id="list">
+                    <!-- 전기차 리스트 -->
+                </div>
+            </div>
+            <div id = "template" style = "display: none ;">
+                <div class = "col-sm-6 col-md-4 col-lg-3">
+                    <div class="panel panel-success panel-carlifecycle">
+                        <div class = "panel-heading">
+                            <h5 class = "panel-title">  </h5>
+                        </div>
+                        <div class = "panel-body">
+                            <img style = "width : 100%;" src = "">
+                            <br/><br/>
+                            <strong>순번</strong> : <span class = "id"></span><br/>
+                            <strong>차 번호</strong> : <span class = "carno"></span><br/>
+                            <strong>모델명</strong> : <span class = "cartype"></span><br/>
+                            <strong>배터리 품명</strong> : <span class = "battery"></span><br/>
+                            <strong>전기모터 품명</strong> : <span class = "motor"></span><br/>
+                            <strong>출고가(ETH)</strong> : <span class = "price"></span><br/><br/>
+                            <button class = "btn btn-owner btn-edit"
+                                type = "button"
+                                data-toggle = "modal"
+                                data-target="#editModal">
+                                수정
+                            </button>
+                            <button class = "btn btn-info btn-buy"
+                                type = "button"
+                                data-toggle = "modal"
+                                data-target="#buyModal">
+                                구매하기
+                            </button>
+                            <button class="btn btn-info btn-buyerInfo"
+                                typ="button"
+                                data-toggle="modal"
+                                data-target="#buyerInfoModal"
+                                style="display:none;">
+                                구매자정보
+                            </button>
+                            <h2 class = "panel-title">  </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 전기차 등록 modal  -->
+            <div class="modal fade" tabindex="-1" role="dialog" id = "addModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title">자동차 회사 page</h4>
+                        </div>
+                        <div class="modal-body">            
+                            <input type = "text"  class = "form-control" id = "carno" placeholder = "차 번호(ex.123가 4567)"/><br/>
+                            <input type = "text"  class = "form-control" id = "cartype" placeholder = "모델명(ex.현대)"/><br/>
+                            <input type = "file"  class = "form-control" id = "carimg" placeholder = "사진"/><br/>
+                            <input type = "text" class = "form-control" id = "battery" placeholder = "배터리 품명(ex.Bxxxx)"/><br/>
+                            <input type = "text" class = "form-control" id = "motor" placeholder = "전기 모터 품명(ex.Mxx)"/><br/>
+                            <input type = "number" class = "form-control" id = "price" placeholder = "출고가(eth)"/><br/> 
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+                            <button type="button" class="btn btn-primary" onclick="App.addCar(); return false;">등록</button>
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div>
+
+            <!-- 전기차 수정 modal  -->
+            <div class="modal fade" tabindex="-1" role="dialog" id = "editModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title"> 서비스센터 관리자 page </h4>
+                        </div>
+                        <div class="modal-body">
+                            <strong> 차번호 : </strong><input type = "text" id = "carno" style = "border:0px;" readonly/><br/>
+                            <strong> 모델명 : </strong><input type = "text" id = "cartype" style = "border:0px;" readonly/><br/>
+                            <strong> 출고가(eth) : </strong><input type = "number" id = "price" style = "border:0px;" readonly/><br/><br/>
+                            <strong>배터리 품명</strong><br/>
+                            <input type = "text" class = "form-control" id = "battery" /><br/>
+                            <strong>전기 모터 품명</strong><input type = "text" class = "form-control" id = "motor" /><br/>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+                            <button type="button" class="btn btn-primary" onclick="App.editCar(); return false;">수정</button>
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div>
+
+            <!-- 전기차 구매 modal  -->
+            <div class="modal fade" tabindex="-1" role="dialog" id = "buyModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title">구매자 정보</h4>
+                        </div>
+                        <div class="modal-body">
+                            <input type = "hidden" id = "id"/>
+                            <input type = "hidden" id = "price"/>
+                            <input type = "text" class = "form-control" id = "name" placeholder = "이름"/><br/>
+                            <input type = "number" class = "form-control" id = "hp" placeholder = "핸드폰번호"/><br/>          
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+                            <button type="button" class="btn btn-primary" onclick="App.buyCar(); return false;">제출</button>
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+
+
+            <!--모달3 : buyer information -->
+            <div class="modal fade" tabindex="-1" role="dialog" id = "buyerInfoModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title">구매자 정보</h4>
+                        </div>
+                        <div class="modal-body">
+                            <strong>구매자주소</strong> : <span id = "buyerAddress"></span><br/>
+                            <strong>이름</strong> : <span id = "buyerName"></span><br/>
+                            <strong>연락처</strong> : <span id = "buyerHp"></span><br/>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div>
+        </section>
+
+        <!-- Bootstrap core JavaScript -->
+        <script src="./vendor/jquery/jquery.min.js"></script>
+        <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Plugin JavaScript -->
+        <script src="./vendor/jquery-easing/jquery.easing.min.js"></script>
+
+        <!-- Contact form JavaScript -->
+        <script src="./js/jqBootstrapValidation.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+        <script src="./js/web3.min.js"></script>
+        <script src="./js/truffle-contract.js"></script>
+        <script src="./js/app.js"></script>
+        <script src="js/scripts.js"></script>
+        
+        <!-- Custom scripts for this template -->
+        <script src="./js/utf8.js"></script>
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>

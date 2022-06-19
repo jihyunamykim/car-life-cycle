@@ -1,0 +1,26 @@
+{
+  "name": "carlifecycle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "dev": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jihyunamykim/car-life-cycle.git"
+  },
+  "author": "car-life-cycle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jihyunamykim/car-life-cycle/issues"
+  },
+  "homepage": "https://github.com/jihyunamykim/car-life-cycle#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}

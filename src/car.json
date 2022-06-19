@@ -1,0 +1,92 @@
+[
+  {
+    "id": 0,
+    "carno"  : "123가 4568",
+    "cartype": "포르쉐",
+    "picture": "img/1.jpg",
+    "battery": "B1548" ,
+    "motor"  : "M34",
+    "price"  : 1.02
+  },
+  {
+    "id": 1,
+    "carno"  : "111다 4568",
+    "cartype": "현대",
+    "picture": "img/2.jpg",
+    "battery": "B1528" ,
+    "motor"  : "M32",
+    "price"  : 1.56
+  },
+  {
+    "id": 2,
+    "carno"  : "111라 4555",
+    "cartype": "마세라티",
+    "picture": "img/3.jpg",
+    "battery": "B1548" ,
+    "motor"  : "M55",
+    "price"  : 2.74
+  },
+  {
+    "id": 3,
+    "carno"  : "100다 5555",
+    "cartype": "BMW",
+    "picture": "img/4.jpg",
+    "battery": "B1578" ,
+    "motor"  : "M34",
+    "price": 1.87
+  },
+  {
+    "id": 4,
+    "carno"  : "100아 5845",
+    "cartype": "아이오닉",
+    "picture": "img/5.jpg",
+    "battery": "B158" ,
+    "motor"  : "M14",
+    "price"  : 1.97
+  },
+  {
+    "id": 5,
+    "carno"  : "851아 0102",
+    "cartype": "애플카",
+    "picture": "img/6.jpg",
+    "battery": "B158" ,
+    "motor"  : "M03",
+    "price"   : 1.99
+  },
+  {
+    "id": 6,
+    "carno"  : "856아 1122",
+    "cartype": "현대",
+    "picture": "img/7.jpg",
+    "battery": "B1778" ,
+    "motor"  : "M344",
+    "price"  : 1.12
+  },
+  {
+    "id": 7,
+    "carno"  : "856아 1122",
+    "cartype": "현대",
+    "picture": "img/8.jpg",
+    "battery": "B154" ,
+    "motor"  : "M48",
+    "price": 1.57
+  },
+  {
+    "id": 8,
+    "carno"  : "856차 1002",
+    "cartype": "테슬라",
+    "picture": "img/9.jpg",
+    "battery": "B154" ,
+    "motor"  : "M348",
+    "price": 1.57
+  },
+  {
+    "id": 9,
+    "carno"  : "514바 1004",
+    "cartype": "기아",
+    "picture": "img/10.jpg",
+    "battery": "B154" ,
+    "motor"  : "M348",
+    "price": 1.57
+  }
+]
